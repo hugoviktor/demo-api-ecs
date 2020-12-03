@@ -2,9 +2,9 @@ module.exports = (app) => {
     const books = require('../controllers/book.controller.js');
 
     // Create a new Book
-    app.post('/books', books.create);
+    app.post('/accounts', books.create);
     // Get a single Book with bookId
-    app.get('/books/:bookId', books.getById);
+    app.get('/accounts/:bookId', books.getById);
 
 
 }
